@@ -40,12 +40,12 @@ BERT hyperparameters to tune: Initial learning rate, batch size, max number of e
 
 ## Results
 
+![](./results.png)
 
+As we see, BERT has the best performance among all 3 methods.
 
+## Conclusion
 
+In this project, we scraped 100,000 title questions from 10 different topics. We used number of comments as our gold label to classify whether a title question belonging to some topic is popular or not. Then we chose thresholds to classify popularity in 10 topics and did a binary classification using 3 methods: CNN, BiLSTM and BERT. We found BERT reached the best performance among all 3 methods.
 
-
-
-
-
-
+There are some limitations in our project: First of all, our dataset consists of title questions which are usually very short. Short text classification is one of the most important tasks in natural language processing. Unlike paragraphs or documents, short texts are usually more ambiguous since they have not enough contextual information, so this makes our project very challenging. Second, there are some features which may be very important but we haven’t utilized in the project: supplementary descriptions to title questions, whether the post contains pictures/videos or not, content of pictures/videos, or even the time of posting may be an important feature (probably a post published at 3am won’t receive many comments), etc. If we include those features in our future work, we believe it will help the model have a better understanding of the title question and make a better prediction.
